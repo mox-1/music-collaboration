@@ -22,3 +22,78 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.pad {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+}
+
+.pad.active {
+  background-color: pink !important;
+}
+
+.pad-light {
+  position: absolute;
+  top: 60px;
+  left: 25px;
+  width: 5px;
+  height: 5px;
+  background-color: pink;
+}
+
+.slider-wrapper div {
+  margin-bottom: 0px !important;
+}
+
+.tempo-controller {
+  margin: 20px;
+}
+
+.pad-light.active {
+  background-color: grey;
+}
+
+.play-button {
+  width: 100px;
+}
+
+.tempo-display-wrapper {
+  display: inline-block;
+  font-size: 20px;
+}
+
+#audio_file {
+  display: none;
+}
+
+.tempo-controller {
+  margin: 70px;
+}
+
+.layer {
+  position: relative;
+}
+
+.file-uploaded {
+  position: absolute;
+  margin-top: 22px;
+  text-transform: uppercase;
+  top: 0;
+  font-size: 15px;
+  right: 0;
+}
+
+.layer-wrapper {
+  margin: 0px auto;
+  width: 960px;
+  position: relative;
+}
+
+.layer label svg {
+  margin-top: 10px;
+}
+
