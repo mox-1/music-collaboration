@@ -69,7 +69,7 @@ class PadSequence extends Component {
             pads.push(<Pad key={i} index={i} showLights={this.props.showLights} setSteps={this._setSteps} activePad={!!~this.props.steps.indexOf(i)} activeLight={this.state.activeLight === i}/>);
         }
         return (
-            <div>
+            <div className={'pad-wrapper'}>
                 {pads}
             </div>
         );

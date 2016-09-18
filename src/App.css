@@ -71,29 +71,37 @@
 }
 
 .tempo-controller {
-  margin: 70px;
+  padding: 35px;
+  margin: 24px;
 }
 
 .layer {
   position: relative;
+  padding: 5px;
 }
 
 .file-uploaded {
   position: absolute;
-  margin-top: 22px;
+  max-width: 150px;
+  overflow: hidden;
   text-transform: uppercase;
-  top: 0;
   font-size: 15px;
   right: 0;
+  top: 33%;
+  margin-right: 10px;
 }
 
 .layer-wrapper {
-  margin: 0px auto;
+  margin: 20px auto;
   width: 960px;
   position: relative;
 }
 
 .layer label svg {
   margin-top: 10px;
+}
+
+.pad-wrapper {
+  display: inline-block;
 }
 

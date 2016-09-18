@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { Song } from 'react-music';
-import { RaisedButton } from 'material-ui';
+import { RaisedButton, Paper } from 'material-ui';
 
 import TempoController from './TempoController';
 import AddLayer from './AddLayer';
@@ -48,16 +48,21 @@ class TrackEditor extends Component {
         // To allow for multiple bars, we may have to pretend that the tempo is different
         return (
             <div className={'layer-wrapper'}>
-                <RaisedButton
-                  label={this.state.playing ? 'Stop' : 'Play'}
-                  secondary={true}
-                  onTouchTap={this._handlePlay}
-                  style={{margin: '30px 0px'}}
-                />
-                <Song tempo={this.state.tempo} playing={this.state.playing}>
-                        <AddLayer showLights={true}/>
-                </Song>
-                <TempoController setTempo={this._setTempo} value={this._convertTempoToSliderValue(this.state.tempo)}/>
+                <Paper>
+                    <RaisedButton
+                      label={this.state.playing ? 'Stop' : 'Play'}
+                      secondary={true}
+                      onTouchTap={this._handlePlay}
+                      style={{margin: '30px 0px'}}
+                    />
+                    <Song tempo={this.state.tempo} playing={this.state.playing}>
+                            <AddLayer/>
+                            <AddLayer/>
+                            <AddLayer/>
+                            <AddLayer showLights={true}/>
+                    </Song>
+                    <TempoController setTempo={this._setTempo} value={this._convertTempoToSliderValue(this.state.tempo)}/>
+                </Paper>
             </div>
         )
     }
