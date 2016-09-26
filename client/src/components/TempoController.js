@@ -21,7 +21,7 @@ class TempoController extends Component {
     render() {
         return (
             <div className={'tempo-controller'}>
-                <Paper secondary={true} rounded={true} zDepth={2} style={{height: 50, width: 200, margin: '0px auto'}}>
+                <Paper rounded={true} zDepth={5} style={{height: 50, width: 500, margin: '0px auto'}}>
                     <div className={'slider-wrapper'}>
                         <Slider style={{width: '80%', margin: '0px auto'}} name={'Tempo'} onChange={this._handleSliderChange} value={this.props.value} axis={'x'}/>
                     </div>

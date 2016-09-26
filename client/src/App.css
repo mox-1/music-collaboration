@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+.page-wrapper {
+  width: 960px;
+  position: relative;
+  display: inline-block;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -61,6 +67,20 @@
   width: 100px;
 }
 
+.add-icon {
+  background-image: url('./add_icon.png');
+  background-position: -1px 3px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.add-icon-wrapper {
+  float: right;
+}
+
 .tempo-display-wrapper {
   display: inline-block;
   font-size: 20px;
@@ -73,6 +93,10 @@
 .tempo-controller {
   padding: 35px;
   margin: 24px;
+}
+
+.layers {
+  padding: 20px 10px 50px;
 }
 
 .layer {
@@ -92,6 +116,7 @@
 }
 
 .layer-wrapper {
+  text-align: center;
   margin: 20px auto;
   width: 960px;
   position: relative;

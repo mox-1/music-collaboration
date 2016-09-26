@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import {deepOrange500} from 'material-ui/styles/colors';
+import {deepOrange500, lightBlue50} from 'material-ui/styles/colors';
 import injectTapEventPlugin from 'react-tap-event-plugin';
+import AddTrack from './components/AddTrack';
 import logo from './logo.svg';
 import './App.css';
-import TrackEditor from './components/TrackEditor';
 
 const muiTheme = getMuiTheme({
   palette: {
@@ -19,9 +19,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <MuiThemeProvider muiTheme={muiTheme}>
-            <TrackEditor/>
-        </MuiThemeProvider>
+        <div className="page-wrapper">
+          <MuiThemeProvider muiTheme={muiTheme}>
+              <AddTrack/>
+          </MuiThemeProvider>
+        </div>
       </div>
     );
   }

@@ -45,7 +45,6 @@ class AddLayer extends Component {
     }
 
     render() {
-        console.log(this.state.currentSampleName);
         var buttonStyle = {
             display: 'inline-block',
             left: -30,

@@ -48,21 +48,19 @@ class TrackEditor extends Component {
         // To allow for multiple bars, we may have to pretend that the tempo is different
         return (
             <div className={'layer-wrapper'}>
-                <Paper>
                     <RaisedButton
                       label={this.state.playing ? 'Stop' : 'Play'}
                       secondary={true}
                       onTouchTap={this._handlePlay}
-                      style={{margin: '30px 0px'}}
+                      style={{margin: '14px 0px'}}
                     />
                     <Song tempo={this.state.tempo} playing={this.state.playing}>
-                            <AddLayer/>
-                            <AddLayer/>
+                        <div className={'layers'}>
                             <AddLayer/>
                             <AddLayer showLights={true}/>
+                        </div>
                     </Song>
                     <TempoController setTempo={this._setTempo} value={this._convertTempoToSliderValue(this.state.tempo)}/>
-                </Paper>
             </div>
         )
     }
